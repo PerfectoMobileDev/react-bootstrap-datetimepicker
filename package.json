@@ -21,7 +21,7 @@
     "lint": "eslint ."
   },
   "publishConfig": {
-    "registry": "http://npm.addevcloudservices.com.au"
+    "registry": "http://reporting-nexus.aws-ci.perfectomobile.com:8081/nexus/repository/npm/"
   },
   "keywords": [
     "react",
