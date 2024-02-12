@@ -21,7 +21,7 @@
     "lint": "eslint ."
   },
   "publishConfig": {
-    "registry": "https://reporting-nexus.aws-dev.perfectomobile.com/repository/npm-group/"
+    "registry": "https://reporting-nexus.aws-dev.perfectomobile.com/repository/npm/"
   },
   "keywords": [
     "react",
