@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to standards from [Keep a CHANGELOG](http://keepachangelog.com).
 
+## [1.0.6] - 2026-07-28
+
+### Added
+
+- `prepare` script so the package can be installed directly as a git dependency (npm runs it automatically after cloning, building `lib/` via `build-npm`).
+
 ## [1.0.3] - 2024-02-12
 
 ### Changed
