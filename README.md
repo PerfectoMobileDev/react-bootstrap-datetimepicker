@@ -66,21 +66,24 @@ Default Format Based on Mode
 
 Release Process
 ========
+This package is consumed as a git dependency (e.g. `git+https://github.com/PerfectoMobileDev/react-bootstrap-datetimepicker.git#v1.0.6`), not published to an npm registry. The `prepare` script builds `lib/` automatically when installed this way, so no `npm publish` step is needed.
+
 Once your pull request has been merged to master:
 
 1. Make sure you have the latest changes by running `git pull` on the master branch.
 2. *(Optional)* Check that your changes are reflected in the lib/react-bootstrap-datetimepicker.js file by running `npm run build-npm` and checking the file manually from the lib folder.
-3. When you're happy with your changes, run on your console:
+3. Bump the version and tag it, respecting [semantic versioning](http://semver.org/):
 
-	npm run patch-release
+	npm version patch
 	#OR
-	npm run minor-release
+	npm version minor
 	#OR
-	npm run major-release
+	npm version major
 
-Please respect [semantic versioning](http://semver.org/)!
+4. Push the commit and tag: `git push origin master --follow-tags`
+5. Update any consumers' `package.json` to reference the new tag.
 
-If the release command fails, then please read what the release command does (see `package.json`), and figure out which step of the process went wrong, so that you can re-try just that bit. If you get stuck, ping #ex-myob-widgets for help!
+The `patch-release`/`minor-release`/`major-release` scripts (and `npm publish`) are legacy from when this package was published to an internal Nexus registry, which has been retired.
 
 Local linking to another project
 ========
