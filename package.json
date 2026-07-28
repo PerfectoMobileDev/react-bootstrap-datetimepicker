@@ -1,6 +1,6 @@
 {
   "name": "@perfecto/react-bootstrap-datetimepicker",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A bootstrap datetime picker component for React.js",
   "homepage": "http://dev.quri.com/react-bootstrap-datetimepicker/",
   "repository": {
@@ -14,6 +14,7 @@
     "minor-release": "cross-env RELEASE=minor npm run release",
     "major-release": "cross-env RELEASE=major npm run release",
     "build-npm": "babel --stage 0 ./src -d ./lib --ignore __tests__/*",
+    "prepare": "npm run build-npm",
     "build": "cross-env NODE_ENV=production webpack --output-file react-bootstrap-datetimepicker.js",
     "build-min": "cross-env NODE_ENV=production COMPRESS=1 webpack --output-file react-bootstrap-datetimepicker.min.js",
     "examples": "webpack-dev-server --config ./examples/webpack.config.js",
